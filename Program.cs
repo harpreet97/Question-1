@@ -51,18 +51,22 @@ namespace Question_1
         {
             Car obj = new Car();
             Console.WriteLine("Enter new car details below");
-            Console.WriteLine("***************************************");
+            Console.WriteLine("*****************************************");
             Console.WriteLine("Please enter the colour of the your car?");
             string colour = Console.ReadLine();
+            Console.WriteLine("Colour:" + colour);
             obj.SetColour(colour);
-
+            Console.WriteLine("");
             Console.WriteLine("Please enter the make of the your car?");
             string make = Console.ReadLine();
+            Console.WriteLine("Make:" + make);
             obj.SetMake(make);
-
+            Console.WriteLine("");
             Console.WriteLine("Please enter the gearbox type of the your car?");
             string gearbox = Console.ReadLine();
+            Console.WriteLine("Gearbox type:" +gearbox);
             obj.SetGearbox(gearbox);
+            Console.WriteLine("");
             Console.WriteLine(obj.DescribeCar());
         }
     }
