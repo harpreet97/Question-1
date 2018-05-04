@@ -4,38 +4,38 @@ namespace Question_1
 {
     class Car
     {
-        private string _Colour;
-        private string _Make;
-        private string _Gearbox;
+        private string colour;
+        private string make;
+        private string gearbox;
 
         public string GetColour()
         {
-            return this._Colour;
+            return colour;
         }
 
-        public void SetColour(string value)
+        public void SetColour(string col)
         {
-            this._Colour = value;
+            colour = col;
         }
 
         public string GetMake()
         {
-            return this._Make;
+            return make;
         }
 
-        public void SetMake(string value)
+        public void SetMake(string mk)
         {
-            this._Make = value;
+            make = mk;
 
         }
         public string GetGearbox()
         {
-            return this._Gearbox;
+            return gearbox;
         }
 
-        public void SetGearbox(string value)
+        public void SetGearbox(string gbox)
         {
-            this._Gearbox = value;
+            gearbox = gbox;
         }
 
         public string DescribeCar()
@@ -52,23 +52,21 @@ namespace Question_1
             Car obj = new Car();
             Console.WriteLine("Enter new car details below");
             Console.WriteLine("*****************************************");
-            Console.WriteLine("Please enter the colour of the your car?");
-            string colour = Console.ReadLine();
-            Console.WriteLine("Colour:" + colour);
-            obj.SetColour(colour);
+            Console.Write("Colour: ");
+            string col = Console.ReadLine();
+            obj.SetColour(col);
             Console.WriteLine("");
-            Console.WriteLine("Please enter the make of the your car?");
-            string make = Console.ReadLine();
-            Console.WriteLine("Make:" + make);
-            obj.SetMake(make);
+
+            Console.Write("Make: ");
+            string mk = Console.ReadLine();
+            obj.SetMake(mk);
             Console.WriteLine("");
-            Console.WriteLine("Please enter the gearbox type of the your car?");
-            string gearbox = Console.ReadLine();
-            Console.WriteLine("Gearbox type:" +gearbox);
-            obj.SetGearbox(gearbox);
+
+            Console.Write("Gearbox type: " );
+            string gbox = Console.ReadLine();
+            obj.SetGearbox(gbox);
             Console.WriteLine("");
             Console.WriteLine(obj.DescribeCar());
         }
     }
 }
-
